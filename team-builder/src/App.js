@@ -15,9 +15,9 @@ function App() {
     <div className="App">
       <h1>The Team</h1>
       <MembersForm addNewMember= {addNewMember}/>
-      <Members member = {Members}/>
+      {member.map((member, i) => <Members member = {member} key = {i}/>)}
     </div>
-  );
+  )
 }
 
 export default App;
